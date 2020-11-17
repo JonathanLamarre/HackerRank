@@ -1,0 +1,1 @@
+Arrays.sort(s, 0, n, (s1, s2) -> -(new BigDecimal(s1).compareTo(new BigDecimal(s2))));
