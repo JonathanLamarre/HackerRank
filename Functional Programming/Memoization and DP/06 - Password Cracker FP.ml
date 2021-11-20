@@ -3,7 +3,7 @@ module Set_of_strings = Set.Make (struct type t = string * string let compare = 
 
 let crack s passes =
     let rec find s lst setos a cont = match s, lst with
-        | "", _ -> cont true setos a
+   		| "", _ -> cont true setos a
 		| _, [] -> cont false setos a
         | _, pass::tl ->
             if Set_of_strings.mem (pass, s) setos
